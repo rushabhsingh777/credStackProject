@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		9B6341962608F7F1003F230F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6341952608F7F1003F230F /* AppDelegate.swift */; };
 		9B6341982608F7F1003F230F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6341972608F7F1003F230F /* SceneDelegate.swift */; };
-		9B63419A2608F7F1003F230F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6341992608F7F1003F230F /* ViewController.swift */; };
+		9B63419A2608F7F1003F230F /* MainStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6341992608F7F1003F230F /* MainStackViewController.swift */; };
 		9B63419D2608F7F1003F230F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B63419B2608F7F1003F230F /* Main.storyboard */; };
 		9B63419F2608F803003F230F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B63419E2608F803003F230F /* Assets.xcassets */; };
 		9B6341A22608F803003F230F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6341A02608F803003F230F /* LaunchScreen.storyboard */; };
+		9B6341AC26090047003F230F /* ExpandedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B6341AB26090047003F230F /* ExpandedView.xib */; };
+		9B6341AE26090060003F230F /* ExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6341AD26090060003F230F /* ExpandedView.swift */; };
+		9B6341B026090074003F230F /* CollapsedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6341AF26090074003F230F /* CollapsedView.swift */; };
+		9B6341B226090084003F230F /* CollapsedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B6341B126090084003F230F /* CollapsedView.xib */; };
+		9B6341B42609029F003F230F /* DynamicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B6341B32609029F003F230F /* DynamicView.xib */; };
+		9B6341B6260902B2003F230F /* DynamicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6341B5260902B2003F230F /* DynamicView.swift */; };
+		9B6341B926091D11003F230F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6341B826091D11003F230F /* Player.swift */; };
+		9B665FA62609DA8D00121F0B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B665FA52609DA8D00121F0B /* Utils.swift */; };
+		9B7DF41B2609BD8600A4944F /* CredConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7DF41A2609BD8600A4944F /* CredConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9B6341922608F7F1003F230F /* credStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = credStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6341952608F7F1003F230F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B6341972608F7F1003F230F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9B6341992608F7F1003F230F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B6341992608F7F1003F230F /* MainStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStackViewController.swift; sourceTree = "<group>"; };
 		9B63419C2608F7F1003F230F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B63419E2608F803003F230F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B6341A12608F803003F230F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B6341A32608F803003F230F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B6341AB26090047003F230F /* ExpandedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandedView.xib; sourceTree = "<group>"; };
+		9B6341AD26090060003F230F /* ExpandedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedView.swift; sourceTree = "<group>"; };
+		9B6341AF26090074003F230F /* CollapsedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsedView.swift; sourceTree = "<group>"; };
+		9B6341B126090084003F230F /* CollapsedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollapsedView.xib; sourceTree = "<group>"; };
+		9B6341B32609029F003F230F /* DynamicView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicView.xib; sourceTree = "<group>"; };
+		9B6341B5260902B2003F230F /* DynamicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicView.swift; sourceTree = "<group>"; };
+		9B6341B826091D11003F230F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		9B665FA52609DA8D00121F0B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		9B7DF41A2609BD8600A4944F /* CredConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,56 @@
 		9B6341942608F7F1003F230F /* credStack */ = {
 			isa = PBXGroup;
 			children = (
+				9B7DF4192609BD4900A4944F /* Utils */,
+				9B6341B726091CD8003F230F /* Models */,
 				9B6341952608F7F1003F230F /* AppDelegate.swift */,
 				9B6341972608F7F1003F230F /* SceneDelegate.swift */,
-				9B6341992608F7F1003F230F /* ViewController.swift */,
-				9B63419B2608F7F1003F230F /* Main.storyboard */,
+				9B6341A92608F874003F230F /* Controller */,
+				9B6341AA2608F884003F230F /* Views */,
 				9B63419E2608F803003F230F /* Assets.xcassets */,
 				9B6341A02608F803003F230F /* LaunchScreen.storyboard */,
 				9B6341A32608F803003F230F /* Info.plist */,
 			);
 			path = credStack;
+			sourceTree = "<group>";
+		};
+		9B6341A92608F874003F230F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9B6341992608F7F1003F230F /* MainStackViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9B6341AA2608F884003F230F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9B63419B2608F7F1003F230F /* Main.storyboard */,
+				9B6341AB26090047003F230F /* ExpandedView.xib */,
+				9B6341AD26090060003F230F /* ExpandedView.swift */,
+				9B6341AF26090074003F230F /* CollapsedView.swift */,
+				9B6341B126090084003F230F /* CollapsedView.xib */,
+				9B6341B32609029F003F230F /* DynamicView.xib */,
+				9B6341B5260902B2003F230F /* DynamicView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9B6341B726091CD8003F230F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9B6341B826091D11003F230F /* Player.swift */,
+				9B7DF41A2609BD8600A4944F /* CredConstants.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9B7DF4192609BD4900A4944F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9B665FA52609DA8D00121F0B /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +184,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B6341B226090084003F230F /* CollapsedView.xib in Resources */,
 				9B6341A22608F803003F230F /* LaunchScreen.storyboard in Resources */,
+				9B6341B42609029F003F230F /* DynamicView.xib in Resources */,
+				9B6341AC26090047003F230F /* ExpandedView.xib in Resources */,
 				9B63419F2608F803003F230F /* Assets.xcassets in Resources */,
 				9B63419D2608F7F1003F230F /* Main.storyboard in Resources */,
 			);
@@ -138,8 +200,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B63419A2608F7F1003F230F /* ViewController.swift in Sources */,
+				9B6341B6260902B2003F230F /* DynamicView.swift in Sources */,
+				9B7DF41B2609BD8600A4944F /* CredConstants.swift in Sources */,
+				9B665FA62609DA8D00121F0B /* Utils.swift in Sources */,
+				9B63419A2608F7F1003F230F /* MainStackViewController.swift in Sources */,
+				9B6341AE26090060003F230F /* ExpandedView.swift in Sources */,
 				9B6341962608F7F1003F230F /* AppDelegate.swift in Sources */,
+				9B6341B926091D11003F230F /* Player.swift in Sources */,
+				9B6341B026090074003F230F /* CollapsedView.swift in Sources */,
 				9B6341982608F7F1003F230F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,11 +355,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZS5WMDAX7Z;
 				INFOPLIST_FILE = credStack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rushabh.credStack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rushabh.credStackView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,11 +374,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZS5WMDAX7Z;
 				INFOPLIST_FILE = credStack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rushabh.credStack;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rushabh.credStackView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

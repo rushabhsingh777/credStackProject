@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16097.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DynamicView" customModule="credStack" customModuleProvider="target">
+            <connections>
+                <outlet property="collapsedView" destination="z5o-En-ehJ" id="NOo-lu-lYq"/>
+                <outlet property="expandedView" destination="eix-Yc-8uf" id="0hf-Oj-raA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eix-Yc-8uf" userLabel="ExpandedView" customClass="ExpandedView" customModule="credStack" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z5o-En-ehJ" customClass="CollapsedView" customModule="credStack" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="afe-6u-Qys" userLabel="height = 120"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="eix-Yc-8uf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8YY-gF-ium"/>
+                <constraint firstAttribute="bottom" secondItem="eix-Yc-8uf" secondAttribute="bottom" id="8jE-Ca-Qiq"/>
+                <constraint firstItem="eix-Yc-8uf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="IIl-BB-axt"/>
+                <constraint firstAttribute="trailing" secondItem="eix-Yc-8uf" secondAttribute="trailing" id="LtE-yl-lvc"/>
+                <constraint firstAttribute="trailing" secondItem="z5o-En-ehJ" secondAttribute="trailing" id="MRN-Kp-ubO"/>
+                <constraint firstItem="z5o-En-ehJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MiK-7J-1Xp"/>
+                <constraint firstItem="z5o-En-ehJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XDJ-HY-R3c"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="133" y="154"/>
+        </view>
+    </objects>
+</document>

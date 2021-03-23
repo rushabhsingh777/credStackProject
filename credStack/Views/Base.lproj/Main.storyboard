@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Stack View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainStackViewController" customModule="credStack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GuD-ai-p9T" userLabel="MainContentView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="752"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Pq-AE-jvq">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="752"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y4M-B8-bha" userLabel="contentView">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1000" id="dQG-cR-m08"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="y4M-B8-bha" firstAttribute="bottom" secondItem="DPy-Jh-0UL" secondAttribute="bottom" id="7EA-Rs-XUf"/>
+                                            <constraint firstItem="y4M-B8-bha" firstAttribute="top" secondItem="DPy-Jh-0UL" secondAttribute="top" id="W3d-Jb-lJA"/>
+                                            <constraint firstItem="y4M-B8-bha" firstAttribute="width" secondItem="sEM-tw-xty" secondAttribute="width" id="XCW-kp-4iW"/>
+                                            <constraint firstItem="y4M-B8-bha" firstAttribute="trailing" secondItem="DPy-Jh-0UL" secondAttribute="trailing" id="sc5-bP-Jio"/>
+                                            <constraint firstItem="y4M-B8-bha" firstAttribute="leading" secondItem="DPy-Jh-0UL" secondAttribute="leading" id="y7K-TK-PgZ"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="DPy-Jh-0UL"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="sEM-tw-xty"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="1Pq-AE-jvq" secondAttribute="bottom" id="MQI-5S-SOF"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Pq-AE-jvq" secondAttribute="trailing" id="gYm-Ar-dPJ"/>
+                                    <constraint firstItem="1Pq-AE-jvq" firstAttribute="top" secondItem="GuD-ai-p9T" secondAttribute="top" id="iYd-E6-MxS"/>
+                                    <constraint firstItem="1Pq-AE-jvq" firstAttribute="leading" secondItem="GuD-ai-p9T" secondAttribute="leading" id="y24-BE-zFw"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbZ-Pf-dba">
+                                <rect key="frame" x="8" y="804" width="398" height="50"/>
+                                <color key="backgroundColor" red="0.12437722374147779" green="0.18787089682946256" blue="0.33615561548223349" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="p9q-zD-BKD" userLabel="height = 50"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Last Man Standing">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ctaButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0af-Rm-272"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HbZ-Pf-dba" secondAttribute="bottom" constant="8" id="Bm7-t9-E8a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GuD-ai-p9T" secondAttribute="trailing" id="OEm-Wl-12R"/>
+                            <constraint firstItem="HbZ-Pf-dba" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="PKw-4x-HnQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HbZ-Pf-dba" secondAttribute="trailing" constant="8" id="Z9N-4q-ErT"/>
+                            <constraint firstItem="GuD-ai-p9T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hMW-EU-NOD"/>
+                            <constraint firstItem="HbZ-Pf-dba" firstAttribute="top" secondItem="GuD-ai-p9T" secondAttribute="bottom" constant="8" id="ipS-ge-dzW"/>
+                            <constraint firstItem="GuD-ai-p9T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yQr-WU-C2D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ctaButton" destination="HbZ-Pf-dba" id="iUG-am-shv"/>
+                        <outlet property="mainContentView" destination="GuD-ai-p9T" id="qq5-n0-Dba"/>
+                        <outlet property="scrollView" destination="1Pq-AE-jvq" id="RCH-uE-H3m"/>
+                        <outlet property="scrollableContentView" destination="y4M-B8-bha" id="dml-Qo-UJs"/>
+                        <outlet property="scrollableContentViewHeightConstraint" destination="dQG-cR-m08" id="cKt-9j-lNr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>

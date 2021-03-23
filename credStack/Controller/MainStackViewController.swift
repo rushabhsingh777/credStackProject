@@ -69,11 +69,10 @@ class MainStackViewController: UIViewController, CollapsedViewProtocol {
             self.showOnlyFirstView()
             
         case PlayerID.MS_DHONI_ID:
-            //show second view with first collapsed and third hidden
+            //show second view expanded with first view collapsed and third view hidden
             self.showSecondViewExpanded()
             
         default:
-            //show first view only
             self.showOnlyFirstView()
         }
         self.updateCTAButtonText()
@@ -82,21 +81,12 @@ class MainStackViewController: UIViewController, CollapsedViewProtocol {
     @IBAction func ctaButtonClicked(_ sender: Any) {
         switch currentPlayerId {
         case PlayerID.SOURAV_ID:
-            //show second view with first collapsed and third hidden
+            //show second view expanded with first view collapsed and third view hidden
             self.showSecondViewExpanded()
             
         case PlayerID.MS_DHONI_ID:
-            //show third view with first and second collapsed
-            
-            self.firstView.collapse()
-            
-            self.secondView.collapse()
-            
-            self.thirdView.expand()
-            
-            scrollableContentViewHeightConstraint.constant = thirdView.frame.size.height + thirdView.frame.origin.y
-            currentPlayerId = PlayerID.VIRAT_ID
-            
+            //show third view expanded with first and second views collapsed
+            self.showThirdViewExpanded()
             
         case PlayerID.VIRAT_ID:
             self.showOnlyFirstView()
@@ -111,6 +101,7 @@ class MainStackViewController: UIViewController, CollapsedViewProtocol {
         self.thirdView.isHidden = true
         scrollableContentViewHeightConstraint.constant = firstView.frame.size.height
         currentPlayerId = PlayerID.SOURAV_ID
+        animateScrollViewTill(offset: 0)
     }
     
     func showSecondViewExpanded(){
@@ -120,6 +111,25 @@ class MainStackViewController: UIViewController, CollapsedViewProtocol {
         self.thirdView.isHidden = true
         scrollableContentViewHeightConstraint.constant = secondView.frame.size.height + secondView.frame.origin.y
         currentPlayerId = PlayerID.MS_DHONI_ID
+        animateScrollViewTill(offset: firstView.frame.origin.y)
+    }
+    
+    func showThirdViewExpanded(){
+        //show third view expanded with first and second views collapsed
+        self.firstView.collapse()
+        self.secondView.collapse()
+        self.thirdView.expand()
+        scrollableContentViewHeightConstraint.constant = thirdView.frame.size.height + thirdView.frame.origin.y
+        currentPlayerId = PlayerID.VIRAT_ID
+        animateScrollViewTill(offset: secondView.frame.origin.y)
+    }
+    
+    func animateScrollViewTill(offset: CGFloat) {
+        DispatchQueue.main.async {
+            UIView.animate(withDuration: 0.5, delay: 0, options: UIView.AnimationOptions.curveEaseOut, animations: {
+                self.scrollView.contentOffset.y = offset
+            }, completion: nil)
+        }
     }
     
     func updateCTAButtonText(){

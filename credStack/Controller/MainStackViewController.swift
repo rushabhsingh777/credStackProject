@@ -28,11 +28,15 @@ class MainStackViewController: UIViewController, CollapsedViewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.addSubviews()
+        self.showOnlyFirstView()
+        self.updateCTAButtonText()
+    }
+    
+    func addSubviews(){
         addFirstView()
         addSecondView()
         addThirdView()
-        self.showOnlyFirstView()
-        self.updateCTAButtonText()
     }
     
     func addFirstView(){
